@@ -1,0 +1,62 @@
+.what_our{
+    padding-top: 40px;
+    background-color: rgba(229, 229, 229, 0.24);
+}
+.what{
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-slide{
+        max-width: 507px !important;
+        margin-right: 0 !important;
+        text-align: inherit;
+        background-color: transparent;
+        .opasity_text{
+            color: #999;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 300;
+        }
+        .slide_display{
+            padding: 20px 0 24px;
+            display: flex;
+            &_name{
+                padding-left: 16px;
+                .name{
+                    color:#0A0B09;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+                .profile{
+                    color:#999;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+                .logo{
+                    margin-top: 6px;
+                    width: 64px;
+                    height: 16px;
+                }
+            }
+        }
+        .description{
+            color: #0A0B09;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 400;
+            padding-bottom: 80px;
+            @media screen and (max-width: 425px) {
+                padding-bottom: 40px;
+            }
+        }
+        .avatar{
+            width: 72px;
+            height: 72px;
+        }
+    }
+    &-pagination{
+        padding-bottom: 24px;
+        text-align: center;
+    }
+}   

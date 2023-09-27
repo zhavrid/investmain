@@ -1,0 +1,220 @@
+.current_news{
+    padding: 144px 0px 104px;
+    @media screen and (max-width: 425px) {
+        padding: 104px 0 72px;
+    }
+    &_title{
+        &_display{
+            display: flex;
+            gap: 16px;
+            .right{
+                h1{
+                    font-size: 56px;
+                    font-weight: 400;
+                    @media screen and (max-width: 425px) {
+                        font-size: 40px;
+                    }
+                }
+            }
+            .left{
+                h1{
+                    font-size: 56px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    @media screen and (max-width: 425px) {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        p{
+            font-size: 18px;
+            padding: 8px 0 48px;
+            @media screen and (max-width: 425px) {
+                font-size: 16px;
+            }
+        }
+    }
+    &_blocks{   
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        &_block{
+            width: 32%;
+            padding: 48px 40px 40px 46px;
+            background: var(--White, #FFF);
+            border-bottom: 2px solid #fff;
+            box-shadow: 0px 4px 48px 0px rgba(229, 229, 229, 0.48);
+            transition: .5s;
+            &:hover{
+                border-bottom: 2px solid var(--Black, #0A0B09);
+                background: var(--White, #FFF);
+                box-shadow: 0px 8px 32px 0px rgba(190, 190, 190, 0.48);            
+                .current_news_blocks_block_button{
+                    background-color: #F05454;
+                    color: #FFF;
+                }
+            }
+            @media screen and (max-width: 960px) {
+                width: 48%;
+            }
+            @media screen and (max-width: 425px) {
+                width: 100%;
+            }
+            .logo{
+                width: 181px;
+                height: 24px;
+            }
+            .title{
+                font-size: 14px;
+                font-weight: 300;
+                padding: 16px 0 24px;
+                text-align: left;
+            }
+            &_button{
+                border: 2px solid #F05454;
+                display: flex;
+                width: 178px;
+                padding: 16px 0;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                color: var(--Red, #F05454);
+                font-size: 14px;
+                font-weight: 700;
+                background-color: #FFF;
+                transition: .5s;
+                text-transform: uppercase;
+                &:hover{
+                    background-color: #F05454;
+                    color: #FFF;
+                }
+                @media screen and (max-width: 425px) {
+                    width: 100%;
+                }
+                .arrow{
+                    width: 16px;
+                    height: 16px;
+                    padding: 4px 1px;
+                }
+            }
+        }
+        @media screen and (max-width: 425px) {
+            padding-bottom: 124px;
+        }
+    }
+}
+
+.mySwiper {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    .current_slide{
+        justify-content: space-between; 
+        align-items: center; 
+        background: #fff;
+        cursor: pointer;
+        padding: 40px; 
+        width: 350px;
+        box-shadow: 0px 4px 48px 0px rgba(229, 229, 229, 0.48);
+        border-bottom: 2px solid transparent;
+        transition: .5s;
+        @media screen and (max-width: 425px) {
+            padding: 24px;
+        }
+        &:hover{
+            border-bottom: 2px solid #0A0B09;
+            box-shadow: 0px 8px 32px 0px rgba(190, 190, 190, 0.48);
+            .button {
+                background: #f05454;
+                color: #fff;
+                background-image: url(http://bootstrap-wp-theme-investmain/wp-content/uploads/2023/09/Icons-2.svg);
+                background-repeat: no-repeat;
+                background-position: 88% 50%;
+            }
+        }
+        & .description {
+            color: #0A0B09;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 20px; 
+            padding-top: 16px;
+            text-align: initial;
+            min-height: 60px;
+        }
+        & .button {
+            display: flex;
+            width: 178px;
+            padding: 16px 42px 16px 22px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border: 2px solid #f05454;
+            background-color: #fff;
+            color: #f05454;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: .42px;
+            text-transform: uppercase;
+            background-image: url(http://bootstrap-wp-theme-investmain/wp-content/uploads/2023/09/Icons-3.svg);
+            background-repeat: no-repeat;
+            background-position: 88% 50%;
+            transition: .5s;
+        }
+        & .img {
+            display: block;
+            max-width: 181px;
+            height: 40px;
+            object-fit: inherit;
+        }
+    }
+
+    &-setting{
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 425px) {
+            padding-top: 40px;
+        }
+    }
+    
+    &-arrows{
+        display: flex;
+        gap: 24px;
+        @media screen and (max-width: 930px) {
+            display: none;
+        }
+    }
+
+}
+.swiper-pagination {
+    position: inherit !important;
+    text-align: end !important;
+    z-index: 1 !important;
+    &-bullet{
+        background: #F05454 !important;
+        opacity: 0.48;
+        &-active {
+            background: #F05454 !important;
+            padding: 6px !important;
+        }
+    }
+    @media screen and (max-width: 930px) {
+        text-align: center !important;
+    }
+    &-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 2px 10px !important;
+    }
+    &-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+        margin: 0px 10px !important;
+    }
+}   
+
+.logo_desc{
+    margin-bottom: 24px;
+}
+

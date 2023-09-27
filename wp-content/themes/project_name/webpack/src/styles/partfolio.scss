@@ -1,0 +1,94 @@
+a:hover{
+    text-decoration: none;
+}
+.partfolio{
+    margin-top: 104px;
+    &_title{
+       .titile{
+            text-transform: uppercase;
+            font-size: 56px;
+            margin-bottom: 48px;
+            @media screen and (max-width: 827px) {
+                font-size: 40px;
+            }
+        } 
+    }
+    &_blocks{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 74px;
+        &_block{
+            padding: 24px;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30.33%;
+            height: 204px;
+            background: #FFF;
+            box-shadow: 0px 4px 48px 0px rgba(229, 229, 229, 0.48);
+            margin-bottom: 30px;
+            @media screen and (max-width: 960px) {
+                width: 48%;
+            }
+            @media screen and (max-width: 700px) {
+                height: 120px;
+            }
+            @media screen and (max-width: 570px) {
+                margin-bottom: 16px;
+            }
+            .img_invis{
+                @media screen and (max-width: 700px) {
+                    width: 92px;
+                    height: 23px;
+                }
+            }
+            .block_img{
+                width: 302px;
+                height: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                @media screen and (max-width: 1250px) {
+                    width: 231px;
+                    height: 92px;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 108px;
+                    height: 72px;
+                }
+            }
+            .description, .invis{
+                display: none;
+                opacity: 0; /* Устанавливаем начальное значение прозрачности */
+                transition: opacity 0.5s; 
+            }
+            .vis{
+                max-width: 223px;
+                max-height: 96px;
+            }
+            &:hover{
+                .invis{
+                    display: block;
+                    color: $black;
+                    text-decoration: none;
+                    text-align: center;
+                    opacity: 1;
+                }
+                .vis{
+                    display: none;
+                }
+                border-bottom: 2px solid $black;
+                background: var(--White, #FFF);
+                box-shadow: 0px 8px 32px 0px rgba(190, 190, 190, 0.48);
+            }
+            .description_blocks{
+                color: $black;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+    }
+}

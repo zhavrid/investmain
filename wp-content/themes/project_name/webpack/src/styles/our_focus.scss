@@ -1,0 +1,55 @@
+.our_focus{
+    padding-top: 104px;
+    &_title{
+        .title_our{
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 80px;
+            text-transform: uppercase;
+            @media screen and (max-width: 570px) {
+                font-size: 40px;
+             }
+        }
+        .desc_our{
+            padding: 8px 0 48px;
+            font-size: 18px;
+            @media screen and (max-width: 570px) {
+                font-size: 16px;
+            }
+        }
+    }
+    &_blocks{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 74px;
+        &_block{
+            width: 350px;
+            padding: 40px;
+            height: 266px;
+            background-color: white;
+            box-shadow: 0px 4px 48px rgba(229, 229, 229, 0.48);
+            margin-bottom: 30px;
+            @media screen and (max-width: 768px) {
+                width: 100% !important;
+            }
+
+            .title{
+                padding: 24px 0 8px;
+                font-size: 24px;
+                font-weight: 700;
+                @media screen and (max-width: 827px) {
+                    font-size: 20px;
+                }
+            }
+            .description{
+                font-size: 16px;
+                font-weight: 300;
+                @media screen and (max-width: 827px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

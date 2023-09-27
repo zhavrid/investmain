@@ -1,0 +1,90 @@
+.what_we{
+    background-color: $black;
+    .containers{
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1110px;
+        @media screen and (max-width: 1250px) {
+            padding: 68px 0px 68px 64px;
+        }
+        @media screen and (max-width: 768px) {
+            padding: 0 64px;
+        }
+        @media screen and (max-width: 570px) {
+            padding: 0 24px;
+        }
+    }
+    &_block{
+        background: url(http://bootstrap-wp-theme-investmain/wp-content/uploads/2023/09/Mask-group.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        display: flex;
+        align-items: center;
+        padding: 120px 0;
+        @media screen and (max-width: 1250px) {
+            padding: 68px 0;
+        }
+        @media screen and (max-width: 910px) {
+            background-size: 50vw;
+        }
+        @media screen and (max-width: 768px) {
+            background: none;
+            background-size: auto;
+            display: block;
+        }
+        &_left{
+            .what_titile{
+                font-size: 36px;
+                color: white;
+                font-weight: 700;
+                @media screen and (max-width: 827px) {
+                    font-size: 24px;
+                }
+            }
+            .what_desc{
+                margin-top: 16px;
+                font-size: 18px;
+                color: white;
+                font-weight: 400;
+                max-width: 540px;
+            }
+            &_button{
+                margin-top: 48px;
+                display: flex;
+                width: 178px;
+                padding: 16px 44px 16px 22px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border: 2px solid var(--Red, #F05454);
+                background: var(--Red, #F05454);
+                color: var(--White, #FFF);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 16px; 
+                letter-spacing: 0.42px;
+                text-transform: uppercase;
+                background-image: url('http://bootstrap-wp-theme-investmain/wp-content/uploads/2023/09/Icons-2.svg');
+                background-repeat: no-repeat;
+                background-position: 88% 50%;
+                @media screen and (max-width: 425px) {
+                    width: 100%;
+                }
+            }
+        }
+        &_img .img{
+            display: none;
+            @media screen and (max-width: 768px) {
+                display: block;
+                margin: 70px auto 0;
+                max-width: 327px;
+                width: 100%;
+                max-height: 329px;
+                height: 100%;
+
+            }
+        }
+    }
+}

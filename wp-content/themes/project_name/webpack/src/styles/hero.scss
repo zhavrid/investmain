@@ -1,0 +1,87 @@
+.hero{
+    padding-top: 104px;
+    &_block{
+        background-image: url("http://bootstrap-wp-theme-investmain/wp-content/uploads/2023/09/jason-blackeye-kufsOr1-F-s-unsplash-1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        @media screen and (max-width: 1024px) {
+            background-image: none;
+        }
+        &_left{
+            width: 100%;
+            padding: 104px 0;
+            @media screen and (max-width: 822px) {
+                padding-top: 72px;
+            }
+            &_content{
+                .h1_one{
+                    font-size: 80px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    @media screen and (max-width: 570px) {
+                       font-size: 52px;
+                    }
+                }
+                .h1_two{
+                    font-size: 80px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-left: 95px;
+                    @media screen and (max-width: 570px) {
+                        font-size: 52px;
+                    }
+                }
+                .h1_three{
+                    font-size: 80px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    @media screen and (max-width: 570px) {
+                        font-size: 52px;
+                    }
+                }
+            }
+            .description{
+                margin-top: 24px;
+                font-size: 18px;
+                max-width: 433px;
+                @media screen and (max-width: 570px) {
+                    font-size: 16px;
+                }
+            }
+            .button{
+                margin-top: 48px;
+                display: flex;
+                width: 178px;
+                padding: 16px 44px 16px 22px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border: 2px solid #F05454;
+                background: #F05454;
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 16px; 
+                letter-spacing: 0.42px;
+                text-transform: uppercase;
+                background-image: url('http://bootstrap-wp-theme-investmain/wp-content/uploads/2023/09/Icons-2.svg');
+                background-repeat: no-repeat;
+                background-position: 88% 50%;
+                @media screen and (max-width: 570px) {
+                    width: 100%;
+                }
+            }
+        }
+        &_img{
+            display: none;
+            @media screen and (max-width: 1024px) {
+               display: block;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
