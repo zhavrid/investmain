@@ -1,20 +1,20 @@
 .hero{
     padding-top: 104px;
     &_block{
-        background-image: url("http://bootstrap-wp-theme-investmain/wp-content/uploads/2023/09/jason-blackeye-kufsOr1-F-s-unsplash-1.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right;
         @media screen and (max-width: 1024px) {
             background-image: none;
         }
         &_left{
             width: 100%;
             padding: 104px 0;
+            position: relative;
             @media screen and (max-width: 822px) {
                 padding-top: 72px;
             }
             &_content{
+                h1{
+                    line-height: 80px;
+                }
                 .h1_one{
                     font-size: 80px;
                     font-weight: 400;
@@ -73,6 +73,17 @@
                     width: 100%;
                 }
             }
+            .video{
+                position: absolute;
+                right: 0;
+                top: 0;
+                max-width: 635px;
+                max-height: 658px;
+                z-index: -1;
+                @media screen and (max-width: 1024px) {
+                    display: none;
+                }
+            }
         }
         &_img{
             display: none;
@@ -83,5 +94,49 @@
                 width: 100%;
             }
         }
+    }
+}
+
+
+.video-controls {
+    background: #fff;
+    box-shadow: 0 4px 48px hsla(0,0%,89.8%,.48);
+    padding: 32px;
+    position: absolute;
+    right: -12%;
+    top: 104px;
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    @media screen and (max-width: 1375px) {
+        right: -10%;
+    }
+    @media screen and (max-width: 1338px) {
+        right: -8%;
+    }
+    @media screen and (max-width: 1298px) {
+        right: -6%;
+    }
+    span{
+        display: flex;
+        color: $black;
+        font-size: 12px;
+        font-weight: 600;
+        color: $black;
+        cursor: pointer;
+        padding-bottom: 16px;
+        &:last-child{
+            padding-bottom: 0px;
+        }
+    }
+    img {
+        display: none;
+        padding-left: 16px;
+    }
+    .highlighted {
+        color: #FF0000 !important;
+    }
+    @media screen and (max-width: 1024px) {
+        display: none;
     }
 }

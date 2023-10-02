@@ -49,7 +49,7 @@
                 color: #FFF;
                 font-size: 14px;
                 font-weight: 300;
-                margin-bottom: 24px;
+                margin-top: 24px;
                 @media screen and (max-width: 768px) {
                     width: 100% !important;
                 }
@@ -92,6 +92,7 @@
                 }
             }
             .wpcf7-textarea, .wpcf7-text{
+                margin-top: 24px;
                 padding-top: 10px;
                 padding-left: 16px;
                 width: 540px;
@@ -100,6 +101,7 @@
                 border-radius: 0px;
                 border: 1px solid #FFF;
                 font-size: 14px;
+                color: #fff;
                 &::placeholder {
                     color: #fff;
                     font-weight: 300;
@@ -114,7 +116,7 @@
                 }
                 &:focus{
                     border-radius: 0px;
-                    border: 2px solid var(--White, #FFF);
+                    border: 2px solid #FFF;
                     background: rgba(255, 255, 255, 0.08);
                     color: #ffffff;
                 }
@@ -149,6 +151,9 @@
                     color: #ffffff;
                 }
             }
+            .wpcf7-not-valid {
+                border: 1px solid #f05454;
+            }
         }
     }
 }
@@ -166,31 +171,44 @@
     
 }
 
-form{
-    display: flex;
-    justify-content: space-between;
-    @media screen and (max-width: 1110px) {
-        display: block;
-    }
+
+
+
+.select_div{
+    margin-top: 24px !important;
 }
-
-
-
 
 .select2-container{
     width: 259px !important;
 }
 
 .select2-container--default .select2-selection--single {
-    border: 1px solid #FFF !important;
-    background: $black !important;
-    border-radius: 0px !important;
+    border: 1px solid #fff !important;
+    background: #0a0b09 !important;
+    border-radius: 0 !important;
     font-size: 14px;
     font-weight: 300;
     height: 48px !important;
     width: 259px;
     padding: 10px 16px;
 }
+.select2-container--default .select2-selection--single:invalid,
+.select2-container--default .select2-selection--single.error {
+    border: 1px solid #f05454 !important;
+    background: #0a0b09 !important;
+    border-radius: 0 !important;
+    font-size: 14px;
+    font-weight: 300;
+    height: 48px !important;
+    width: 259px;
+    padding: 10px 16px;
+}
+
+/* Добавляем стиль для выделения красным при ошибке */
+.select2-container--default.select2-container--invalid .select2-selection--single {
+    border-color: red !important;
+}
+
 
 
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single{
@@ -248,3 +266,46 @@ form{
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
     display: none !important;
 }
+
+
+
+
+.wpcf7-response-output{
+   display: none !important;
+}
+
+
+.wpcf7-not-valid-tip {
+    color: #F05454 !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    display: block;
+}
+
+.thx {
+    display: none;
+    width: 540px;
+    @media screen and (max-width: 1110px) {
+        padding: 72px 0;
+        width: 100%;
+    }
+    &-text{
+        color: #FFF;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        padding-top: 32px;
+    }
+    &-messege{
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        padding-top: 8px;
+        width: 320px;
+        @media screen and (max-width: 345px) {
+            width: 280px;
+        }
+    }
+}
+
