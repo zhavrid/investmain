@@ -3,15 +3,34 @@ html, body, h1,h2,h3,p,ul,li,a{
     padding: 0;
     font-family: 'MuseoSans';
 }
-
+@font-face { 
+    font-family: 'MuseoSans-lite';
+    src: url("../fonts/MuseoSansLight/MuseoSansLight.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face { 
+    font-family: 'MuseoSans-medium';
+    src: url("../fonts/MuseoSansMedium/MuseoSansMedium.ttf");
+    font-style: normal;
+    font-weight: 500;
+}
 @font-face { 
     font-family: 'MuseoSans';
-    src: url("../fonts/MuseoSansMedium/MuseoSansMedium.ttf");
+    src: url("../fonts/MuseoSansRegular/MuseoSansRegular.ttf");
     font-style: normal;
     font-weight: 400;
 }
+@font-face { 
+    font-family: 'MuseoSans-bold';
+    src: url("../fonts/MuseoSansBold/MuseoSansBold.ttf");
+    font-style: normal;
+    font-weight: 700;
+}
 
 $black: #0A0B09;
+$white: #fff;
+$red: #F05454;
 
 .container{
     padding: 0;
@@ -20,7 +39,7 @@ $black: #0A0B09;
     @media screen and (max-width: 1250px) {
         padding: 0 64px;
     }
-    @media screen and (max-width: 570px) {
+    @media screen and (max-width: 768px) {
         padding: 0 24px;
     }
 }

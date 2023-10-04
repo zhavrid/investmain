@@ -49,7 +49,7 @@ header{
     li {
       list-style: none;
       padding-bottom: 48px;
-      @media screen and (max-width: 570px) {
+      @media screen and (max-width: 425px) {
         padding-bottom: 40px;
         &:last-child{
           padding-bottom: 0px; 
@@ -61,12 +61,13 @@ header{
       a{
         color: #0A0B09;
         font-size: 36px;
-        font-weight: 700;
+        font-family: 'MuseoSans-bold';
         transition: .3s;
         &:hover{
           color: #F05454;
+          border-bottom: 2px solid #F05454;
         }
-        @media screen and (max-width: 570px) {
+        @media screen and (max-width: 425px) {
           font-size: 24px;
         }
       }
@@ -137,19 +138,28 @@ header{
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border: 2px solid var(--Red, #F05454);
-  background: var(--Red, #F05454);
-  color: var(--White, #FFF);
+  border: 2px solid $red;
+  background: $red;
+  color: $white;
   font-size: 14px;
   font-style: normal;
-  font-weight: 700;
+  font-family: 'MuseoSans-bold';
   line-height: 16px; 
   letter-spacing: 0.42px;
   text-transform: uppercase;
   background-image: url('http://bootstrap-wp-theme-investmain/wp-content/uploads/2023/09/Icons-2.svg');
   background-repeat: no-repeat;
   background-position: 88% 50%;
-}
+  transition: .5s;
+  &:hover{
+    background: $white;
+    font-family: 'MuseoSans-bold';
+    color: $red;
+    background-image: url('http://bootstrap-wp-theme-investmain/wp-content/uploads/2023/09/Icons-3.svg');
+    background-repeat: no-repeat;
+    background-position: 88% 50%;
+  }
+} 
 
 .links{
   width: 101px;
@@ -160,7 +170,6 @@ header{
 }
 
 
-/* Стили для затемненного фона */
 .overlay {
   display: none;
   position: fixed;
@@ -168,12 +177,11 @@ header{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Здесь можно установить желаемую прозрачность */
-  z-index: 999; /* Убедитесь, что это значение выше, чем у других элементов */
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
   cursor: pointer;
 }
 
-/* Стили для блокировки экрана */
 .locked {
   overflow: hidden;
 }

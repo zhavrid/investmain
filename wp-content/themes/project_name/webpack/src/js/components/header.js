@@ -14,7 +14,14 @@ function toggleMenu() {
     }
 }
 
-function closeMenu() {
+document.addEventListener("DOMContentLoaded", function() {
+  var menuBtn = document.querySelector('.menu-btn');
+  var overlay = document.getElementById('overlay');
+
+  menuBtn.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', closeMenu);
+
+  function closeMenu() {
     var menuList = document.querySelector('.header_menu_list');
     var overlay = document.getElementById('overlay');
     var body = document.body;
@@ -23,10 +30,14 @@ function closeMenu() {
     overlay.style.display = 'none';
     body.classList.remove('locked');
 }
+});
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  var menuBtn = document.querySelector('.menu-btn');
+  menuBtn.addEventListener('click', toggleMenu);
 
-function toggleMenu() {
+  function toggleMenu() {
     var menuBtn = document.querySelector('.menu-btn');
     var menuList = document.querySelector('.header_menu_list');
     var overlay = document.getElementById('overlay');
@@ -43,9 +54,8 @@ function toggleMenu() {
         overlay.style.display = 'block';
         body.classList.add('locked');
     }
-}
-
-
+  }
+});
 
 
 var logo = document.querySelector(".attachment-full");

@@ -1,25 +1,29 @@
 .impact_potential{
     background-color: $black;
     padding: 88px 0;
+    @media screen and (max-width: 425px) {
+        padding: 72px 0;
+    }
     &_block{
         text-align: center;
         .title_white{
             font-size: 36px;
             color: white;
-            font-weight: 700;
             max-width: 723px;
             margin: 0 auto;
-            @media screen and (max-width: 570px) {
+            @media screen and (max-width: 425px) {
                 font-size: 24px;
+            }
+            p{
+                font-family: 'MuseoSans-bold';
             }
         }
         .title_red{
             font-size: 36px;
             color: #F05454;
-            font-weight: 700;
             max-width: 723px;
             margin: 0 auto;
-            @media screen and (max-width: 570px) {
+            @media screen and (max-width: 425px) {
                 font-size: 24px;
             }
         }
@@ -27,10 +31,10 @@
             margin: 0 auto;
             padding-top: 16px;
             font-size: 18px;
-            font-weight: 400;
+            font-family: 'MuseoSans';
             color: white;
             max-width: 920px;
-            @media screen and (max-width: 570px) {
+            @media screen and (max-width: 425px) {
                 font-size: 16px;
             }
         }

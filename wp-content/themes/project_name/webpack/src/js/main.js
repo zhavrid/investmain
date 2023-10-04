@@ -1,5 +1,6 @@
 // JS
 import 'jquery';
+import 'select2';
 
 // Styles
 import '../styles/main.scss'

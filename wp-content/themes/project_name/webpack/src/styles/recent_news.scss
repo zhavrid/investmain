@@ -1,17 +1,21 @@
 .recent_news{
     padding-top: 104px;
+    @media screen and (max-width: 425px) {
+        padding-top: 72px;
+    }
     &_title{
         .title_h1{
             font-size: 56px;
-            @media screen and (max-width: 570px) {
+            @media screen and (max-width: 425px) {
                 font-size: 40px;
             }
         }
         .title_p{
             font-size: 18px;
             padding: 8px 0 48px;
-            @media screen and (max-width: 570px) {
+            @media screen and (max-width: 425px) {
                 font-size: 16px;
+                padding: 16px 0 40px;
             }
         }
     }
@@ -56,10 +60,12 @@
                 .title{
                     font-size: 18px;
                     font-weight: 700;
+                    font-family: 'MuseoSans-bold';
                 }
                 .date{
                     padding-top: 8px;
-                    color: var(--Grey, #999);
+                    color: #999;
+                    font-family: 'MuseoSans-lite';
                     font-size: 14px;
                     font-weight: 300;
                 }

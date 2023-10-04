@@ -1,6 +1,9 @@
 .what_our{
     padding-top: 40px;
     background-color: rgba(229, 229, 229, 0.24);
+    @media screen and (max-width: 425px) {
+        padding-top: 72px;
+    }
 }
 .what{
     &-wrapper{
@@ -13,30 +16,36 @@
         text-align: inherit;
         background-color: transparent;
         .opasity_text{
+            font-family: 'MuseoSans-lite';
             color: #999;
             font-size: 14px;
             font-style: italic;
-            font-weight: 300;
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
         }
         .slide_display{
             padding: 20px 0 24px;
             display: flex;
+            @media screen and (max-width: 425px) {
+                padding: 0 0 24px;
+            }
             &_name{
                 padding-left: 16px;
                 .name{
                     color:#0A0B09;
                     font-size: 14px;
-                    font-weight: 300;
+                    font-family: 'MuseoSans-lite';
                 }
                 .profile{
                     color:#999;
                     font-size: 14px;
-                    font-weight: 300;
+                    font-family: 'MuseoSans-lite';
                 }
                 .logo{
                     margin-top: 6px;
-                    width: 64px;
-                    height: 16px;
+                    width: 80px;
+                    height: inherit;
                 }
             }
         }

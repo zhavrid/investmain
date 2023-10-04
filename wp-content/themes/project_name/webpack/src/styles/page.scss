@@ -1,0 +1,130 @@
+.page{
+    &-primary{
+        padding-top: 208px;
+        @media screen and (max-width: 425px) {
+            padding-top: 158px;
+        }
+    }
+    &-content{
+        padding: 0;
+        margin: 0 auto;
+        max-width: 730px;
+        @media screen and (max-width: 1250px) {
+            padding: 0 64px;
+        }
+        @media screen and (max-width: 425px) {
+            padding: 0 24px;
+        }
+        .policy_title{
+            font-size: 56px;
+            @media screen and (max-width: 503px) {
+                font-size: 40px;
+            }
+        }
+        .policy_date{
+            padding-top: 16px;
+            @media screen and (max-width: 425px) {
+                font-size: 16px;
+            }
+        }
+        .wp-block-heading{
+            padding-top: 80px;
+            @media screen and (max-width: 425px) {
+                font-size: 24px;
+            }
+        }
+        .policy_abzac{
+            padding-top: 16px;
+            font-size: 18px;
+            line-height: 30px;
+            @media screen and (max-width: 425px) {
+                font-size: 16px;
+            }
+            a{
+                color: #F05454;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        ul{
+            list-style-type: square;
+            padding-left: 32px;
+            li{
+                font-size: 18px;
+                line-height: 30px;
+                padding-top: 16px;
+                ul{
+                    list-style-type: circle;
+                }
+            }
+        }
+        .double_li{
+            padding-top: 8px;
+        }
+        .link_ul{
+            list-style-type: none;
+            padding-left: 0px;
+            padding-bottom: 80px;
+            li{
+                a{
+                    color: #F05454;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.page-error{
+    text-align: center;
+    padding-top: 249px;
+    .eror_404{
+        color: $black;
+        text-align: center;
+        font-size: 208px;
+        font-weight: 700;
+        line-height: 208px;
+        text-transform: uppercase;
+    }
+    .error_text{
+        padding-top: 8px;
+        color: $black;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .button_error{
+        margin: 48px auto 209px;
+        display: flex;
+        width: 210px;
+        padding: 16px 32px 16px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border: 2px solid var(--Red,#f05454);
+        background: var(--Red,#f05454);
+        color: var(--White,#fff);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: .42px;
+        text-transform: uppercase;
+        background-image: url(http://bootstrap-wp-theme-investmain/wp-content/uploads/2023/09/Icons-2.svg);
+        background-repeat: no-repeat;
+        background-position: 88% 50%;
+        a{
+        color: white;
+        font-size: 14px;
+        letter-spacing: 0.42px;
+        font-weight: 700;
+        }
+    }    
+}
