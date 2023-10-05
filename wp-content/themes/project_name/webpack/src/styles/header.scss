@@ -38,7 +38,7 @@ header{
   top: 0; 
   right: 0;
   width: 50%; 
-  height: 100vw;
+  height: 260vw;
   background-color: #fff; 
   z-index: 1000;
   list-style: none;
@@ -46,14 +46,14 @@ header{
   margin: 0;
   transition: .5s;
   padding-left: 56px;
+  @media screen and (max-width: 625px) {
+    width: 100%;
+  }
     li {
       list-style: none;
       padding-bottom: 48px;
       @media screen and (max-width: 425px) {
         padding-bottom: 40px;
-        &:last-child{
-          padding-bottom: 0px; 
-        }
       }
       &:hover{
         text-decoration: dashed;
