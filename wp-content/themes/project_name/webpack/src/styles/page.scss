@@ -20,15 +20,22 @@
             @media screen and (max-width: 503px) {
                 font-size: 40px;
             }
+            strong{
+                font-family: 'MuseoSans-bold';
+            }
         }
         .policy_date{
             padding-top: 16px;
             @media screen and (max-width: 425px) {
                 font-size: 16px;
             }
+            strong{
+                font-family: 'MuseoSans-bold';
+            }
         }
         .wp-block-heading{
             padding-top: 80px;
+            font-family: 'MuseoSans-bold';
             @media screen and (max-width: 425px) {
                 font-size: 24px;
             }
@@ -54,6 +61,9 @@
                 font-size: 18px;
                 line-height: 30px;
                 padding-top: 16px;
+                strong{
+                    font-family: 'MuseoSans-bold';
+                }
                 ul{
                     list-style-type: circle;
                 }
